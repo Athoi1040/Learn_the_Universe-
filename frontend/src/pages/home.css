@@ -1,0 +1,107 @@
+/* src/pages/home.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+.home-hero {
+  background: url('E:\semester wise\project react\Learn_the_Universe-\frontend\src\pictures\b1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  position: relative;
+  min-width: 100vw;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.559);
+  min-height: 100vh;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-header h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #b3e5fc;
+  text-shadow: 0 0 10px #03a9f4;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.feature-box {
+  background: rgba(91, 9, 9, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(3, 169, 244, 0.3);
+}
+
+.feature-box h2 {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.feature-box p {
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: #d1ecff;
+}
+
+.feature-box button {
+  padding: 10px 20px;
+  background-color: #03a9f4;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feature-box button:hover {
+  background-color: #0289d175;
+}
+
+
+
+
+.slider {
+  width: 100%;
+  max-width: 900px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  animation: slideAnimation 15s infinite;
+}
+
+.slide {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+@keyframes slideAnimation {
+  0%   { transform: translateX(0); }
+  33%  { transform: translateX(-100%); }
+  66%  { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}

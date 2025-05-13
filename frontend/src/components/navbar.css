@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+.navbar {
+ 
+  /*background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+   background-color: #513151c3;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;*/
+    position:fixed;
+    height: 3dvh;
+   top: 0;
+  width: 97%;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.338); /* transparent black */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+  padding: 1rem 2rem;
+  backdrop-filter: blur(5px);
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+
+
+.logo {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #a591ab;
+  text-shadow: 0 0 10px rgb(3, 144, 244);
+  text-align: left;
+  
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+}
+
+.navbar a:hover {
+  color: #00bcd4;
+  border-bottom: 2px solid #00bcd4;
+}
+
+
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+  
+}
+
+.btn-signup,
+.btn-signin {
+  padding: 0.5rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: 2px solid #03a8f46c;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  background: transparent;
+  color: #03a9f4;
+
+  
+}
+
+
+
+.btn-signin:hover {
+
+  background: #0288d1;
+  color: #fff;
+
+}
+
+
+.btn-signup:hover {
+background: #0288d1;
+  color: #fff;
+}

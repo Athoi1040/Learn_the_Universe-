@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+
+
+
+.signup-container {
+
+ padding-top: 100px; /* Adjust based on actual navbar height */
+  min-height: 100vh;
+  min-width: 100vw;
+  background: url('E:/semester wise/project react/Learn_the_Universe-/frontend/src/pictures/b1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: 'Orbitron', sans-serif;
+  position: relative;
+  color: white;
+}
+
+.signup-card {
+
+background: rgba(0, 0, 0, 0.559);
+  min-height: 50vh;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 700px) {
+  .signup-card {
+    flex-direction: row;
+    min-height: 400px;
+  }
+}
+
+
+
+.signup-left {
+  flex: 1;
+  padding: 2rem;
+}
+
+.signup-left h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #b3e5fc;
+  text-shadow: 0 0 10px #03a9f4;
+}
+
+.signup-left .highlight {
+  color: #22b2c5;
+  text-shadow: 0 0 5px #22c2c5;
+}
+
+.signup-left ul {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+  margin-top: 1rem;
+  color: #d1ecff;
+}
+
+.rocket-img {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.rocket-img img {
+  width: 100px;
+}
+
+.signup-right {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.651);
+  color: #000;
+  padding: 2rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.signup-right h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #111827;
+  text-align: center;
+  font-weight: bold;
+}
+
+.signup-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.signup-right input[type="text"],
+.signup-right input[type="email"],
+.signup-right input[type="password"] {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.signup-right label {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #333;
+}
+
+.signup-right button {
+  background-color: #03a9f4;
+  color: white;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.signup-right button:hover {
+  background-color: #0289d1;
+}
+
+.signup-right p {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #444;
+  text-align: center;
+}
+
+.signup-right p a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.button-container button {
+  width: 100%;
+}
