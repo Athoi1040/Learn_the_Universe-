@@ -11,12 +11,12 @@
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;*/
-    position:fixed;
+   position: fixed;
     height: 3dvh;
    top: 0;
   width: 97%;
   padding: 1rem 2rem;
-  background: rgba(0, 0, 0, 0.338); /* transparent black */
+  background: rgba(44, 44, 93, 0.703); /* transparent black */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -89,4 +89,85 @@
 .btn-signup:hover {
 background: #0288d1;
   color: #fff;
+}
+
+
+.profile-section {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.avatar-icon {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.avatar-icon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+
+
+
+
+.profile-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0; /* fix alignment */
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 12px;
+  width: 220px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  color: black; 
+}
+
+
+.profile-header {
+  margin-bottom: 10px;
+   
+
+}
+
+.profile-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-dropdown li {
+  margin: 8px 0;
+}
+
+.profile-dropdown button {
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+
+
+
+
+
+.profile-dropdown a {
+  color: #000; /* Black */
+  text-decoration: none;
+}
+
+.profile-dropdown a:hover {
+  color: #0077cc; /* Optional: hover color */
+ /* Optional: hover underline */
+}
+
+
+.profile-dropdown button:hover {
+  color: #0077cc; /* Optional: hover color */
+  /* Optional: hover underline */
 }

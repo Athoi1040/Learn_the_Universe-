@@ -1,3 +1,4 @@
+// src/pages/Signup.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './signup.css';
@@ -5,21 +6,31 @@ import './signup.css';
 export default function Signup() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    name: "",
+    firstName: "",
+    lastName: "",
     email: "",
     password: "",
     role: "user"
   });
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // 💾 Simulate storing the user
+    console.log("Registered User:", formData);
+
+    // ✅ Redirect to Sign In page after signup
+    navigate('/signin');
+  };
+
   const handleCancel = () => {
-    setFormData({ name: "", email: "", password: "", role: "user" });
-    navigate("/");
+    setFormData({ firstName: "", lastName: "", email: "", password: "", role: "user" });
+    navigate('/');
   };
 
   return (
     <div className="signup-container">
       <div className="signup-card">
-        {/* Left Section */}
         <div className="signup-left">
           <h2>Become a <span className="highlight">Universe Learner</span></h2>
           <ul>
@@ -34,14 +45,38 @@ export default function Signup() {
           </div>
         </div>
 
-        {/* Right Section */}
         <div className="signup-right">
           <h2>Sign Up</h2>
-          <form>
-            <input type="text" placeholder="First name" />
-            <input type="text" placeholder="Last name" />
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
+          <form onSubmit={handleSubmit}>
+            <input
+              type="text"
+              placeholder="First name"
+              value={formData.firstName}
+              onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
+              required
+            />
+            <input
+              type="text"
+              placeholder="Last name"
+              value={formData.lastName}
+              onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
+              required
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              value={formData.email}
+              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+              required
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              value={formData.password}
+              onChange={(e) => setFormData({ ...formData, password: e.target.value })}
+              required
+            />
+
             <label>
               <input type="checkbox" /> Email me with updates
             </label>
